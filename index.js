@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 5000; // Use a default port if not specified
 
 app.listen(PORT, async () => {
     try {
-        await ConnectDB();
+        await ConnectDB;
         console.log(`Server is running on port ${PORT} and DB is connected`);
     } catch (error) {
         console.error('Error connecting to the database:', error);
